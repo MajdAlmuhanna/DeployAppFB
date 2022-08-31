@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-firebase-hosting';
-}
+
+  toggleDarkTheme(element){
+        if(element.textContent === "Dark"){
+          element.textContent = "Light";
+        } else if( element.textContent === "Light"){
+          element.textContent = "Dark";
+        }
+        document.body.classList.toggle('dark-theme');
+      }
+    }
+
